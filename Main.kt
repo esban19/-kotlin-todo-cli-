@@ -5,14 +5,14 @@ fun main() {
     println("=====================================")
     println(" bienvenido al Gestor de Tareas CLI ")
     println("=====================================")
-    
+
     while (continuar) {
         mostrarMenu()
         print("\nSelecciona una opción (1-6): ")
 
         // Uso de Null Safety al leer de consola para evitar excepciones catastróficas
         val entrada = readLine()
-        val opcion = entrada?.toIntOrNull() ?: 0
+      //  val opcion = entrada?.toIntOrNull() ?: 0
 
         when (opcion) {
             1 -> {
